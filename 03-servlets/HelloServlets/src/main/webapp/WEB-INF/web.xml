@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>HelloServlets</display-name>
+  
+  
+  
+  
+  <!-- The web.xml file is our "deployement descriptor"; it describes to tomcat HOW you want
+  to deploy your application to the web
+  
+  	For this reason, it is essentially tomcat's config file for YOUR application.
+  	(tomcat can be given MANY web.xml files from various applications)
+   -->
+   
+  
+  
+  
+  
+  
+  <!-- The welcome file list is where you declare your landing page for your website
+  		tomcat will use the FIRST valid welcome file it finds
+   -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+  
+  
+   
+   <!--OUR FIRST SERVLET CONFIGURATIONS  -->
+   <servlet>
+ 	 <!-- "servlet-name" is basically creating a variable inside of the web.xml so you can reference
+		this servlet later with additional configurations -->
+   	<servlet-name>OurFirstServletVariableNameHere</servlet-name>
+	<!-- hold ctrl and hover over this package to make sure it is linked to the proper class -->
+   	<servlet-class>ourfirstservlet.OurFirstServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+  	<!-- these are the said additional configurations -->
+   	<servlet-name>OurFirstServletVariableNameHere</servlet-name>
+		<!-- "url-pattern" is defining your endpoint for this servlet. Aka WHICH urls this servlet will service
+			URL FORMAT:
+			localhost:[port]/[project-name]/[url-pattern]
+			So in OUR case:
+			localhost:9002/HelloServlets/first
+		-->
+   	<url-pattern>/first</url-pattern>
+   	<url-pattern>/wumpus</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+  
+  
+    <!-- LIFECYCLE SERVLET CONFIGURATIONS -->
+  <servlet>
+  	<servlet-name>LifeCycleServlet</servlet-name>
+  	<servlet-class>ourfirstservlet.LifeCycleServlet</servlet-class>
+  	
+		<!-- 
+			negative values are lazy loading servlets (post initialized servlets)
+				Tomcat creates these servlets objects when someone triggers their uri.
+				
+			0 or greater values mean eager loading servlets (pre initialized servlets)
+				Tomcat will start these servlets IMMEDIATELY when the server launches.
+				(they will load from 0 having the highest priority on through the other sequential numbers)
+		 -->
+		<load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LifeCycleServlet</servlet-name>
+  	<url-pattern>/lifec</url-pattern>
+  </servlet-mapping>
+  
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- DIRECT SERVLET CONFIGURATIONS -->
+   <servlet>
+   	<servlet-name>DirectServlet</servlet-name>
+   	<servlet-class>directservlet.DirectServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>DirectServlet</servlet-name>
+   	<url-pattern>/direct</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+    
+   <!-- DATABASE SERVLET CONFIGURATIONS -->
+   <servlet>
+   	<servlet-name>DatabaseServlet</servlet-name>
+   	<servlet-class>directservlet.DatabaseDemoServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>DatabaseServlet</servlet-name>
+   	<url-pattern>/database</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+   
+    
+   <!-- USER INPUT SERVLET CONFIGURATIONS -->
+   <servlet>
+   	<servlet-name>UserInputServlet</servlet-name>
+   	<servlet-class>userinputservlet.UserInputServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>UserInputServlet</servlet-name>
+   	<url-pattern>/userinput</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+   
+    
+  <!-- INDIRECT SERVLET CONFIGURATIONS -->
+  <servlet>
+  	<servlet-name>IndirectServlet</servlet-name>
+  	<servlet-class>indirectservlet.IndirectServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>IndirectServlet</servlet-name>
+  	<url-pattern>/indirect</url-pattern>
+  </servlet-mapping>
+  
+   
+   
+   
+    
+   <!-- SESSION SERVLET CONFIGURATIONS -->
+   <servlet>
+   	<servlet-name>SessionServlet</servlet-name>
+   	<servlet-class>sessionservlet.SessionServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>SessionServlet</servlet-name>
+   	<url-pattern>/sesserv</url-pattern>
+   </servlet-mapping>
+   
+   <!-- HELPER SESSION SERVLET CONFIGURATIONS -->
+   <servlet>
+   	<servlet-name>HelperSessionServlet</servlet-name>
+   	<servlet-class>sessionservlet.HelperSessionServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>HelperSessionServlet</servlet-name>
+   	<url-pattern>/helpsesserv</url-pattern>
+   </servlet-mapping>
+  
+</web-app>

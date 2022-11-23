@@ -1,0 +1,323 @@
+Youtube channels that may help:
+https://www.youtube.com/c/CodingwithJohn/featured
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>What is Java?
+>An object oriented programming language based in C and maintained by Oracle
+
+
+
+>>>>>>>>>>>>>>>>>>>Why Java? Why would we use Java?
+>Platform Independence
+	>"write once, run anywhere"
+	>because of the JVM, we'll talk more about that in a sec
+>Widely used & Grandfathered in
+	>"Grandfathered in" means that many companies are using Java, and so it isn'that
+		going away anytime soon
+	>large community
+>Rich API (lots of libraries) & documention
+>open source
+>Easy to use
+	>based in C (though Java is a higher order language)
+	>Object Oriented
+	>Java is strongly typed
+		>JAVASCRIPT (loosely typed)
+			>>>var myVariable = "agsaifjas";
+			>>>myVariable = 5;
+		>JAVA (strongly typed)
+			>>>int i=5;
+			>>>i="hello";   //this line will lead to a syntax error
+	>you don't have to use pointers
+	>automatic garbage collection
+>FREE!!!!!!!!
+
+
+
+
+
+>>>>>>>JDK, JRE, JVM
+Java Development Kit (JDK) - providles tools for developers to use to write source code
+	also contains the JRE, debugger, compiler, devtools, etc
+	
+Java Runtime Environment (JRE) - the set of libraries necessary to run javacode; it also contains the JVM
+
+Java Virtual Machine ( JVM) - it acts as an interpreter, translating your java files into something the OS can understand
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>WHAT IS AN OBJECT!?!?!?!?!?!
+>An instance of a class
+>It's a virtual representation of a real world object/entity
+	>THIS makes coding easier to understand since it mimics the real world
+		something we already understand (hopefully)
+>An object has state and behavior
+	>State is a group of attributes of the object (variables)
+	>Behavior are actions the object can take (methods)
+>A container that holds variables and methods
+
+
+
+
+
+>>>>>>Tangent: What is the difference between a function and a method?
+>A function is a block of code/functionality
+>A method is a block of code/functionality THAT IS ATTACHED TO AN OBJECT (or class)
+
+
+
+
+>>>>>>>>>WHAT IS A CLASS!?!?!!?
+>A class is a blueprint (or template) for an object(s)
+>They are used to create objects of a specific typed; again, it's a template
+>There can be MANY objects created from the one blueprint...there ewill only ever be one blueprint for this specific object type.
+
+
+
+
+
+>>>>>>>>What is OOP?
+>Object Oriented Programming
+>It's a programming paradigm/philosophy (note: there are other paradigms that exist)
+	>other paradigms including: functional programming and behavioral driven programming
+>Programming that utilizes objects to simulate the real world
+
+
+
+
+>>>>>>>>>What are the four pillars of OOP?
+Abstraction, Polymorphism, Inheritance, and Encapsulation
+
+APIE is a helpful acronym
+
+
+
+ABSTRACTION - Demonstrating WHAT something does, without revealing HOW that action is performed.
+	aka hiding implementation
+	
+	Example: Santa Claus brings us an iPhone when we write a letter, we don't know HOW Santa gets that iPhone
+	
+	WHERE can I find this in code?
+		Abstract Classes, Abstract methods, Interfaces, Libraries/Dependencies, etc
+
+POLYMORPHISM - The ability of an entity to behave/act differently depending on the scenario/stimuli
+	aka Polymorphism means "many forms"
+
+	Example: water; water can act differently depending on the temp or container
+	
+	WHERE can I find this in code?
+		overloading, overriding, upcasting, downcasting, generics, etc
+
+INHERITANCE - The passing of attributes/behaviors from one entity to another
+
+	Example: DNA, you are passed your DNA from your parents
+	
+	WHERE can I find this in code
+		"extending" a class/interface/etc
+
+ENCAPSULATION - The restriction of direct access
+
+	Example: vending machine, YOU dont' get the candy, the machine does
+	
+	WHERE can we find this in code?
+		public getters and setters, private state/fields
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Java Naming Convetions
+
+	variable names-
+		camel case			e.g.	pictureFrame, numOfArrays, dressShirt, etc
+
+	
+	method names-
+		camel case-			e.g.	fallDown, flyAway, etc
+
+		verb (action words)
+
+	
+	class names-
+		title case (aka pascal case)	e.g. SilverWare, CollegeStudent, etc
+		
+		nouns (person, place, or thing)
+
+
+	interface names-
+		title case (aka pascal case)	e.g. Edible, Movable, etc
+		
+		adjective (describing words)
+
+
+	package names-
+		lowercase					e.g.characters, movieclips, javax, etc
+
+	constants-
+		uppercase w/ underscore		e.g. PI, YELLOW_MAX, etc
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.What is self documenting code?
+>self documenting code is code that describes what it does via its own name. For example naming your variables
+something like "numOfInstances" instead of "x";
+
+avoid random variable names like:
+	goku, vegeta, trunks, etc
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+When you run your program, the operating system will give your program an allowance of memory; because you're not allow to use ALL memory
+on the machine because you feel like it. That portion of allowable memory will then be used for two different purposes; some will be use to create
+a "heap" and some will be used to create a "stack".
+
+>>>>>>>>>>>>>>>>>>>WHAT is the heap?
+>the heap's allowable memory space is used as a more "general use case" memory. Also, it contains your objects and arrays.
+
+>>>>>>>>>>>>>>>>>>>WHAT is a stack? (in general)
+>A Stack is FILO (first in last out) aka LIFO (last in first out)
+
+>>>>>>>>>>>>>>>>>>>WHAT is a queue? (in general)
+>A Queue is the counterpart to a stack.
+>A Queue is FIFO (first in first out) aka LILO (last in last out)
+
+>>>>>>>>>>>>>>>>>>>Now, what is THE stack in your virtual machine? (aka the "Call Stack")
+>The purpose of this SPECIFIC stack will be to remember the order of your methods calls (aka the flow of execution) and keep track of local variables.
+>YOu can think of THIS SPECIFIC STACK as a sibling to the heap that has a specific responsibility; where the heap is for general use.
+
+
+
+Use cases for each:
+>for a queue, you may want to use a queue if you're keeping track of some transactions in an application
+>for a stack, you may want to use a stack if you're creating an "undo" and "redo" functionality
+														-Miquel Marcano 2021
+														
+
+
+>>>>>>>What is a data structure?
+>a data structure is an object in programming that is designed to store a large group of data entries.
+>we use data structures to create efficiency and organization in storing large groups of data entries. It's like having your toys scattered around your room OR having a toy box.
+>there are MANY different types of data structures out there (and you can even invent more if you'd like); each with their own pros and cons.
+>for example, there are: linked lists, array lists, hash sets, binary trees, maps, stacks, queues, etc.
+> https://pbs.twimg.com/media/ElFSRuJXEAA3F6V.jpg
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>EXCEPTION HANDLING IN JAVA
+
+quick tangent: what is....a segmentation fault in c++
+
+What is...an exception?
+>An exception is an exceptional event (aka an issue) that arises INSIDE of your program's logic. More than likely the programming logic is fault or dangerous or careless.
+>examples:
+	>NullPointerException
+	>NumberFormatException
+	>ArithmeticException
+	>ArrayIndexOutOfBoundsException
+
+What is....an error?
+>An error is an exceptional event (aka an issue) that arises OUTSIDE of your program's logic. More than likely the issue with with your runtime environment or the system.
+>examples:
+	>StackOverflowError
+	>OutOfMemoryError
+
+
+	
+What is the hierarchy of exception handling in java?
+
+
+						(Throwable -	 	[checked] [class])
+										|
+					  /									\
+					/					  				\
+		(Exception -		[checked] [class])		(Error -		[unchecked] [class])
+			|
+		(RuntimeException -	 [unchecked] [class])
+
+
+
+
+Keywords associated with excpetion handling in java?
+-try, catch, finally
+-throws
+-throw
+
+
+
+What is a "checked" exception?
+	The compiler will give you a syntax error if you do NOT "handle" the logic that could potentially throw an exception/error. In short, when you do NOT handle an exception it will lead to a syntactical error, the syntax error itself is NOT the exception being thrown.
+	>example:
+		FileNotFoundException
+		IOException
+
+What is an "unchecked" exception?
+	The compiler will NOT force you to "handle" the logic that could potentially throw and exception/error. meaning there will be no syntax error created.
+	>Note: if you EVER see an unchecked exception YOU need to refactor your code, because you as the developer have made a mistake or was careless
+	>example:
+		IndexOutOfBoundsException
+		InputMismatchException
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

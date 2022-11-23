@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>example</groupId>
+  <artifactId>HelloDaoDesignPatternUsingPokemon</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!--
+  			What is Maven?
+  			
+  			Maven is a build tool and dependency manager. You can use the pom.xml file to
+  			tell Maven HOW you want your project artifacts built....and WHAT DEPENDENCIES
+  			you need/want.
+  			
+  			POM stands for Project Object Model. Basically, the POM is Maven's configuration
+  			file. You can send this configuration file to your team and make sure EVERYONE
+  			on your team has the proper external libraries (dependencies) and everyone's
+  			artifacts are built correctly. Essentially, maven will remove human error.
+  			
+  		To update Maven:
+  		
+  		right click project -> maven -> update project -> then select your project and hit OK
+  		
+    -->
+    
+    
+    <properties>
+    	<maven.compiler.target>11</maven.compiler.target>
+    	<maven.compiler.source>11</maven.compiler.source>
+    </properties>
+    
+    <dependencies>
+    
+    	<!--
+    		THIS IST HE JDBC DRIVER DEPENDENCY
+    	https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.4.0</version>
+		</dependency>
+    	
+    </dependencies>
+  
+</project>

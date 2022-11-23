@@ -1,0 +1,58 @@
+SELF STUDY TIME TOPICS (07/07/2022):
+
+
+
+-----SQL-----
+
+•Query Basics
+	◦What is a query?
+	◦What is a result set?
+	◦What does '*' do in a query?
+	◦How do you select specific columns?
+	◦What is an alias?
+	◦The "where" keyword
+	◦The "where not" keyword
+	◦How do I reference null values?
+	◦The "like" keyword
+	◦The "order by" keyword
+	◦The "between" keyword
+	◦The "in" keyword
+•Aggregate Functions
+	◦What are aggregate functions?
+	◦What are some examples of aggregate functions?
+	◦What do count, max, min, avg, sum, and distinct do?
+	◦The "group by" keyword
+	◦The "having" keyword
+•Scalar Functions
+	◦What are scalar functions?
+	◦What are some examples of scalar functions?
+	◦What do abs, floor, ceil, trunc, upper, lower, length do?
+	◦How do I retreive the current time using SQL?
+•What is a subquery?
+•What is a natural key vs a surrogate key?
+•What is a composite key?
+•What is a candidate key?
+
+
+
+-----Helpful URLs-----
+
+•https://www.w3schools.com/sql/default.asp
+
+
+
+SELF STUDY TIME TOPICS (07/12/2022):
+-What are joins?
+	-What is an inner join, left outer join, right outer join, full outer join?
+	-What is a self join, cartesean join, cross join, equijoin join, theta join?
+-What are set operators?
+	-What does union, union all, intersect, and minus do?
+•Column Level Constraints vs Table Level Constraints
+•What is an ERD?
+	◦What are the symbols?
+
+
+
+
+
+

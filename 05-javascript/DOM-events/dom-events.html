@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demo!!!!</title>
+</head>
+<body>
+
+    <h2>The Event Demo!!</h2>
+
+    <!-- old way of creating events (less dynamic) -->
+    <button onclick="alert('this is mambo numba 5')">Mambo Button</button>
+
+    <!-- old way of creating events (less dynamic) -->
+    <button onclick="(function(){console.log('anonymous button logic')})()">Anonymous Button</button>
+
+    <!-- NOW we can use separation of concerns to our advantage, we can use the JS file
+    to house our potentially lengthy function declarations -->
+    <button onclick="myButtonClickedFunc()">JS Function Button</button>
+
+    <br/><br/><br/>
+    <!-- BUT...what happens if the button didn't exist yet...can we dynamically add events? -->
+    <button id="daButton">Scramble the faeries!!!!</button>
+    <button id="daButtonTwo">FaErIE GoD pArEnTs!!!!</button>
+
+    <script type="text/javascript" src="dom-events.js"></script>
+
+</body>
+</html>

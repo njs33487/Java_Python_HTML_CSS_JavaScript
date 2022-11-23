@@ -1,0 +1,186 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>XML>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>What is XML?
+>eXtensible Markup Language
+>>it's a platform independent dataformat for transferring data
+
+
+>>>Why do we need something like XML?
+>Because each platform holds data in a different format; this makes it difficult for them to communiate.
+Having a language independent format allows them to communicate in a common language.
+
+>>>>how do we store data in Java?
+>example:
+
+int var1 = 5;
+String var2 = "hello";
+
+
+>>>>how do we store data in XML?
+>example:
+
+<xml>
+    <var1>5</var1>
+    <var2>hello</var2>
+</xml>
+
+
+>>>>>>>>>>>>>TERMINOLOGY TIME
+>What is a tag?
+    >>it's a keyword surrounded by diamond brackets
+    >>so the "var1" tag will look like this      <var1>
+>What is an "element"?
+    >>it's an opening and closing tag as well as its contents
+>What is an "attribute"?
+    >>inside a tag you can have more than 1 keyword; the 2nd or 3rd (or beyond) keywords will modify the tag in some way by providing meta data.
+		<var1 attribute1="15" attribute2="blue">
+>What is an XML schema?
+    >>a XML schema is exactly what is sounds like; think of a schema in DBs...they map out how your data will be structures. They are defining the WIREFRAME for your data entries. The same is true for XML.
+    >>inside of XML schemas you can define which keywords are allowed, which children of a tag are allows, how many children are allow, which children are optional, which are mandatory, etc.
+    >>There are multiple types of schemas you can provide in XML: XML Schema Definition (XSD) or Document Type Definition (DTD) 
+>What is "valid XML" and what is "well formed XML"?
+    >>well-formed means the xml has valid syntax
+		>>this is universal, doesn't matter WHICH schema we are using; does it follow general XML rules?
+    >>valid means it correctly follows an XML schema
+		>>for a given schema.
+    >>example of poorlyformed xml syntax:
+            <xml>
+                <var1>50
+            </xml> 
+            </var1>
+
+
+>>>>>>>>>>LARGER XML EXAMPLE
+
+<xml> <-----root tag
+    <var1>5</var1>
+    <var2 attr1="blue" attr2="5">hello</var2>
+    <var3>
+        <subvar1>hola</subvar1>
+        <subvar2>50</subvar2>
+    </var3>
+    <var4>
+        <list>4</list>
+        <list>88</list>
+        <list>12</list>
+    </var4>
+    <var5>
+        <list>
+            <arryvar1>5</arryvar1>
+        </list>
+        <list> 
+            <arryvar1>hola</arryvar1>
+            <arryvar2>additional</arryvar2>
+        </list>
+        <list>
+            <arryvar1>que pasa?</arryvar1>
+        </list>
+    </var5>
+</xml>
+
+
+"xml.var3.subvar2" is how you'd obtain the value 50 (note, this is psuedo code)
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>JSON>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>What is JSON?
+>JavaScript Object Notation
+>>it's a platform independent dataformat for transferring data
+>>It is VERY similar to an object literal in JavaScript
+>>A JSON is NOT a JavaScript object...it is simply a string that represent an object (and is based on JS object's syntax)
+
+
+
+>>>>>>Detour: JavaScript Object Literals
+		In JavaScript:
+		let myObj = {
+			"attr1" : 5,
+			'attr2' : "hello",
+			attr3: {
+				"subattr1": "hola",
+				subattr2: 50
+			},
+			"attr4": [4, 88, 12]
+		}
+
+
+
+>>Rules of JSON
+> { }   <------denotes an object
+> [ ]   <------denotes an array
+>In short, a JSON is a list of key-value pairs. Variable names and variable values.
+>each attribute name MUST BE SURROUNDED WITH DOUBLE QUOTES
+>key-value pairs are separated by commas
+>variable values CAN BE objects or arrays themselves
+	>>what this means is that you can have subobjects inside of your JSON
+>yes, arrays are valid JSONs you can send
+
+
+>>>Now let's take a look at a JSON, First example:
+{
+
+	"attr1": 5,
+	"attr2": "hello",
+	"attr3": {
+			"subattr1": "hola",
+			"subattr2": 50
+		},
+	"attr4": [4, 88, 12],
+	"attr5": [{"arryattr1":5},{"arryattr1":50, "arryattr2": "additional"},{"arryattr1":"que pasa?"}] 
+}
+
+
+
+
+>>>>>>let's take a look at the same object as an xml format
+<xml>
+	<attr1>5</attr1>
+	<attr2>hello</attr2>
+	<attr3>
+		<subattr1>hola</subattr1>
+		<subattr2>50</subattr2>
+	</attr3>
+	<attr4>
+		<list>4</list>
+		<list>88</list>
+		<list>12</list>
+	</attr4>
+	<attr5>
+		<list>
+			<arryattr1>5</arryattr1>
+		</list>
+		<list>
+			<arryattr1>50</arryattr1>
+			<arryattr2>additional</arryattr2>
+		</list>
+		<list>
+			<arryattr1>que pasa?</arryattr1>
+		</list>
+	</attr5>
+</xml>
+
+
+
+
+>>>>Now let's look at ANOTHER VALID JSON...second example:
+		(an array is a VALID JSON)
+[
+	50,
+	75,
+	"hello",
+	{"objectatt1": 5}
+]
+
+
+
+
+
+
+
+
+
+
+
+

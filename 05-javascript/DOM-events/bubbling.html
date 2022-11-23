@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling Demo</title>
+</head>
+<body>
+    
+    <!-- 
+        
+        What is bubbling?
+        >the process of events propagating to their parent elements to trigger even more
+            events of the same type. So if a click event fires, that click event will
+            be passed to all parents, grandparents, etc to trigger more click events.
+
+        What is capturing?
+        >the process of events propogating from parent to child, the opposite of bubbling
+
+     -->
+    <h3>Welcome to Bubbling</h3>
+    
+    <div>
+        <form onclick="alert('form')">
+            form
+            <div onclick="event.stopPropagation(); alert('div')">
+                div
+                <p onclick="alert('para')">paragraph!!!</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

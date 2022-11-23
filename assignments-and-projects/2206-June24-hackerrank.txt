@@ -1,0 +1,37 @@
+
+CHOOSE ANY FOUR OF THE SEVEN PROBLEMS BELOW TO COMPLETE
+(due 6/28/2022 11:59pm est)
+
+
+
+Staircase
+(easy)
+https://www.hackerrank.com/challenges/staircase/problem
+
+A Very Big Sum
+(easy)
+https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+Birthday Cake Candles
+(easy)
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
+Apple and Orange
+(easy)
+https://www.hackerrank.com/challenges/apple-and-orange/problem
+
+Number Line Jumps
+(easy)
+https://www.hackerrank.com/challenges/kangaroo/problem
+
+The Time In Words
+(medium)
+https://www.hackerrank.com/challenges/the-time-in-words/problem
+
+Encryption
+(medium)
+https://www.hackerrank.com/challenges/encryption/problem
+
+
+
+To turn in the hacker rank problems take a screen shot of each successful completion (not the algorithm, just the success screen) and put them in a folder in your gitlab branch called "2206-June24-hackerrank-solutions"; make the this hackerrank-solutions folder INSIDE of your "firstname_code" folder.

@@ -212,3 +212,4 @@ class Fruits(Apple, Banana):
 fruit_bowl = Fruits()
 fruit_bowl.apple_one() # call function initialized in Apple Base Class
 fruit_bowl.banana_one() # call function initialized in Banana Base Class
+
