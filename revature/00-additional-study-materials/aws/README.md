@@ -1,2 +1,0 @@
-# aws
-* [docs](docs)
