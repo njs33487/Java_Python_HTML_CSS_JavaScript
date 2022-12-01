@@ -22,11 +22,8 @@ Project is a sample webpage created with bootstrap for styles and scripts
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Live Server launch: <br/>
-<img src= "https://imgur.com/Kh6oTED" height="80%" width="80%" alt="Webpage_Example"/>
-<br />
-<br />
-
+Live Server Launch: <br/>
+<img src="https://imgur.com/Kh6oTED" height="80%" width="80%" alt="Webpage_Example"/ >
 </p>
 
 
