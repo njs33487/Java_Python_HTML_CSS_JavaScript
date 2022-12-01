@@ -23,7 +23,10 @@ Project is a sample webpage created with bootstrap for styles and scripts
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://imgur.com/a/nSIWab7" height="80%" width="80%" alt="webpage example "/>
+<img src= "https://imgur.com/LPnFyx7" height="80%" width="80%" alt="Webpage_Example"/>
 <br />
 <br />
+
+</p>
+
 
