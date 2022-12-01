@@ -15,24 +15,15 @@ Project is a sample webpage created with bootstrap for styles and scripts
 
 <h2>Environments Used </h2>
 
-- <b>Windows 11</b> (21H2)
-- <b>Visual Studio</b> (21H2)
-- <b>Live Server</b> (21H2)
+- <b>Windows 11</b> 
+- <b>Visual Studio</b> 
+- <b>Live Server</b> 
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/tiXylFl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Web Page Example: <br/>
+<img src="https://imgur.com/LPnFyx7" height="80%" width="80%" alt="webpage_example"/>
 <br />
 <br />
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
