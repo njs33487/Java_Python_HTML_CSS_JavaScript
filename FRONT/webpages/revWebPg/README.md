@@ -23,7 +23,7 @@ Project is a sample webpage created with bootstrap for styles and scripts
 
 <p align="center">
 Live Server Launch: <br/>
-<img src= "https://imgur.com/Kh6oTE" height="80%" width="80%" alt="Webpage_Example"/ >
+<img src= "https://imgur.com/a/nSIWab7" height="80%" width="80%" alt="Webpage_Example"/ >
 </p>
 
 
